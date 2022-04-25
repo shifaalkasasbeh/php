@@ -8,9 +8,26 @@
 </head>
 <body>
 <?php  
-$x= 3;
-$x= 2;
-
+$num1 =20;
+$num2 = 10;
+$operator  = '*' ;
+$result = '';
+if (is_numeric($num1) && is_numeric($num2)) {
+    switch ($operator) {
+        case '+' :
+           $result = $num1 + $num2;
+            break;
+        case '-' :
+           $result = $num1 - $num2;
+            break;
+        case '*':
+            $result = $num1 * $num2;
+            break;
+        case '/':
+            $result = $num1 / $num2;
+    }
+    echo $result .'<br>' ;
+}
 
 ?>  
 
