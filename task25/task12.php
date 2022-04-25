@@ -8,26 +8,31 @@
 </head>
 <body>
         
-<?php  
-$num1=90;
+<?php 
+$grade1 =90;
+$grade2 = 98;
+$grade3 =99;
+$grade4 = 96;
+$grade5= 100;
+$num1= $grade1 + $grade2+ $grade3 + $grade4 + $grade5;
+$avg=$num1/5;
 
-
-if($num1<60)
+if($avg<60)
 {    echo "f";}
 
-    elseif($num1>=60 && $num1<70)
+    elseif($avg>=60 && $avg<70)
         {    echo "d" ;
         } 
      
-        elseif($num1>=70 && $num1<80)
+        elseif($avg>=70 && $avg<80)
         {    echo "c" ;
         } 
 
-        elseif($num1>=80 && $num1<90)
+        elseif($avg>=80 &&$avg<90)
         {    echo "b" ;
         }
 
-        elseif($num1>=90 && $num1<100)
+        elseif($avg>=90 && $avg<100)
         {    echo "a" ;
         }
         
