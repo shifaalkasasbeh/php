@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    
 <?php  
 $num=407;  
 $total=0;  
@@ -26,6 +25,6 @@ else
 {  
 echo "No it is not an armstrong number";  
 }  
-?> 
+?>  
 </body>
 </html>
