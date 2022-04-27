@@ -7,18 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    
-<?php  
-$syear =2024;
-echo "<h1>";
-if(($syear%4==0)&&($syear%100!=0)||($syear%400==0))
-{    echo "the given syear is leap years";
-}
-    else {
-     echo "the given syear is not leap years";
+<?php
+   
+   $x=12;  
+   $y=10; 
+   $x=$x+$y; 
+   $y=$x-$y; 
+   $x=$x-$y;
 
-    }
+   //print the swapped value
+   echo "Value of x: $x</br>";  
+   echo "Value of y: $y</br>";  
+?> 
 
-?>
+
 </body>
 </html>
