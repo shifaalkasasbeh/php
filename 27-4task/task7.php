@@ -9,17 +9,23 @@
 <body>
     
 <?php
-function Palindrome($MyString) {
-  $revString = strrev($MyString);
-  if ($revString == $MyString){
-    echo $MyString." is a Palindrome string.\n";
-  } else {
-    echo $MyString." is not a Palindrome string.\n";
-  }
+
+function check_palindrome($string) 
+{
+    $string = str_replace(' ', '', $string);
+    $string = str_replace(',', '', $string);
+    $string = str_replace('?', '', $string);
+    $string = strtolower($string);
+
+  if ($string == strrev($string))
+     echo "Yes it is a palindrome ";
+  else
+     echo "No it is not a palindrome ";
 }
 
-Palindrome("Eva, can I see bees in a cave? ");
+check_palindrome('Eva, can I see bees in a cave?');
 
 ?>
+
 </body>
 </html>
